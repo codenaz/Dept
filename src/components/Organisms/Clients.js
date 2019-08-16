@@ -8,20 +8,11 @@ import tomtom from '../../assets/images/clients/Tomtom_logo_zwart.png';
 import unilever from '../../assets/images/clients/Unilever_logo_zwart.png';
 import walibi from '../../assets/images/clients/Walibi_logo_zwart.png';
 import pathe from '../../assets/images/clients/Pathe_logo_zwart.png';
-import { lightGrey } from '../../styles/colors';
 import { ClientImage } from '../Molecules/ClientImage';
 
 export default function Clients() {
   return (
-    <Flex
-      width='100%'
-      alignItems='center'
-      justifyContent='center'
-      flexDirection='column'
-      bg={lightGrey}
-      py={['3.4rem']}
-      mt='2rem'
-    >
+    <>
       <Flex
         flexDirection='column'
         alignItems='center'
@@ -53,6 +44,6 @@ export default function Clients() {
         <ClientImage logo={walibi} />
         <ClientImage logo={pathe} />
       </Flex>
-    </Flex>
+    </>
   );
 }

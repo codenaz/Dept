@@ -22,6 +22,10 @@ export default function Logo(props) {
   return <LogoImage src={props.menuToggled ? Whitelogo : Blacklogo} />;
 }
 
+export function WhiteLogo() {
+  return <LogoImage src={Whitelogo} />;
+}
+
 Logo.propTypes = {
   menuToggled: PropTypes.bool
 };

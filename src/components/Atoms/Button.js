@@ -59,10 +59,14 @@ export const PrimaryButton = styled(Button)`
   background-color: ${black};
   color: white;
   justify-content: center;
-  padding: 1rem 0;
+  padding: 0.6rem 0;
   margin: 1rem 0;
   font-size: 16px;
   font-family: Arial;
   line-height: 2;
   font-weight: bold;
+`;
+
+export const SecondaryButton = styled(PrimaryButton)`
+  background-color: #1a18f7;
 `;
