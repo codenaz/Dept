@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Flex } from 'reflexbox';
 import { black } from '../../styles/colors';
 import { WhiteLogo } from '../Atoms/Logo';
@@ -7,7 +8,7 @@ import { ReactComponent as Facebook } from '../../assets/images/icons/facebook-l
 import { ReactComponent as Instagram } from '../../assets/images/icons/instagram.svg';
 import { ReactComponent as Twitter } from '../../assets/images/icons/twitter.svg';
 
-export default function Footer() {
+export default function Footer(props) {
   return (
     <Flex
       bg={black}
@@ -17,6 +18,9 @@ export default function Footer() {
       px='1rem'
       lineHeight='1'
       width='100%'
+      sx={{
+        display: props.menuIsActive ? 'none !important' : 'flex !important'
+      }}
     >
       <Flex
         width={1 / 4}
@@ -78,3 +82,7 @@ export default function Footer() {
     </Flex>
   );
 }
+
+Footer.propTypes = {
+  menuIsActive: PropTypes.bool
+};

@@ -57,7 +57,7 @@ export default function Home() {
           </Flex>
         </Flex>
       </Flex>
-      <Footer />
+      <Footer menuIsActive={menuIsActive} />
     </Flex>
   );
 }
