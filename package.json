@@ -2,24 +2,29 @@
   "name": "dept",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://codenaz.github.io/dept",
   "dependencies": {
     "@emotion/core": "^10.0.15",
     "@emotion/styled": "^10.0.15",
     "classnames": "^2.2.6",
     "emotion-theming": "^10.0.14",
+    "gh-pages": "^2.1.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router": "^5.0.0",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.1",
     "reflexbox": "^4.0.2",
+    "styled-components": "^4.3.2",
     "styled-normalize": "^8.0.6"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
